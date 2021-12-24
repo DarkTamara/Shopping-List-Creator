@@ -1,0 +1,136 @@
+/* remove all basic styling of teh browser  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(30deg, #006580 0%, #de546c 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1rem;
+}
+
+/* center the header and form */
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+
+}
+
+form button{
+    color: #de546c;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: #de546c;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width:30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:all 0.5s ease;
+}
+
+.todo-item{
+    flex: 1; 
+    /* push all buttons right */
+    padding: 0rem 0.5rem;
+}
+
+.trash-btn, .complete-btn {
+    background:#006580 ;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: rgb(4, 94, 4);
+}
+
+.trash-btn{
+    background: rgba(97, 7, 7, 0.932);
+}
+
+/* this fixes the issue so we can click the whole btn */
+.fa-trash, .fa-check-circle {
+    pointer-events: none;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
